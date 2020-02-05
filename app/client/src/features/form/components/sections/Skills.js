@@ -36,7 +36,7 @@ function Skills({
     <Section heading="Your Skills">
       <LabeledInput
         name="headings.skills"
-        label="Section Heading"
+        label="显示名称"
         placeholder="Skills"
       />
       <Divider />
@@ -50,14 +50,14 @@ function Skills({
         />
       ))}
       <Button onClick={addSkill} type="button">
-        Add Skill
+        增加
       </Button>
       <Button
         onClick={removeSkill}
         disabled={skills.length === 1}
         type="button"
       >
-        Remove Skill
+        删除
       </Button>
     </Section>
   )

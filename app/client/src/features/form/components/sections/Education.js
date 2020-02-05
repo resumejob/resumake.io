@@ -20,23 +20,23 @@ type Props = {
 
 function Education({ education, addSchool, removeSchool }: Props) {
   return (
-    <Section heading="Your Educational Background">
+    <Section heading="教育">
       <LabeledInput
         name="headings.education"
-        label="Section Heading"
-        placeholder="Education"
+        label="显示名称"
+        placeholder="教育背景"
       />
       <Divider />
       {education.map((school, i) => <School key={i} index={i} />)}
       <Button onClick={addSchool} type="button">
-        Add School
+        增加
       </Button>
       <Button
         onClick={removeSchool}
         disabled={education.length === 1}
         type="button"
       >
-        Remove School
+        删除
       </Button>
     </Section>
   )

@@ -35,11 +35,11 @@ function Work({
   removeJobHighlight
 }: Props) {
   return (
-    <Section heading="Your Work Experience">
+    <Section heading="工作经历">
       <LabeledInput
         name="headings.work"
         label="Section Heading"
-        placeholder="Work Experience"
+        placeholder="工作经历"
       />
       <Divider />
       {work.map((job, i) => (
@@ -52,10 +52,10 @@ function Work({
         />
       ))}
       <Button onClick={addJob} type="button">
-        Add Job
+        增加
       </Button>
       <Button onClick={removeJob} disabled={work.length === 1} type="button">
-        Remove Job
+        删除
       </Button>
     </Section>
   )

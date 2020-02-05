@@ -35,20 +35,20 @@ function Project({ keywords, index, addKeyword, removeKeyword }: Props) {
       {index > 0 ? <Divider /> : null}
       <LabeledInput
         name={`projects[${index}].name`}
-        label="Project Name"
-        placeholder="Piper Chat"
+        label="项目名称"
+        placeholder="Gmail"
       />
       <LabeledInput
         name={`projects[${index}].description`}
-        label="Project Description"
-        placeholder="A video chat app with great picture quality."
+        label="项目描述"
+        placeholder="让所有人都能使用的最方便的邮箱。"
       />
       <LabeledInput
         name={`projects[${index}].url`}
-        label="Link to Project"
-        placeholder="http://piperchat.com"
+        label="项目链接"
+        placeholder="http://gmail.com"
       />
-      <Label>Tools Used</Label>
+      <Label>技术栈</Label>
       {keywords.map((_, i) => (
         <div key={i}>
           <MiniInput

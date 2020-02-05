@@ -16,38 +16,38 @@ function School({ index }: Props) {
       {index > 0 ? <Divider /> : null}
       <LabeledInput
         name={`education[${index}].institution`}
-        label="School Name"
-        placeholder="Stanford University"
+        label="学校名称"
+        placeholder="中山大学"
       />
       <LabeledInput
         name={`education[${index}].location`}
-        label="School Location"
-        placeholder="Stanford, CA"
+        label="学校城市"
+        placeholder="广州"
       />
       <LabeledInput
         name={`education[${index}].studyType`}
-        label="Degree"
-        placeholder="BS"
+        label="学历"
+        placeholder="本科"
       />
       <LabeledInput
         name={`education[${index}].area`}
-        label="Major"
-        placeholder="Computer Science"
+        label="专业"
+        placeholder="软件工程"
       />
       <LabeledInput
         name={`education[${index}].gpa`}
-        label="GPA"
+        label="绩点"
         placeholder="3.6"
       />
       <LabeledInput
         name={`education[${index}].startDate`}
-        label="Start Date"
-        placeholder="Sep 2015"
+        label="开始时间"
+        placeholder="2012年9月"
       />
       <LabeledInput
         name={`education[${index}].endDate`}
-        label="End Date"
-        placeholder="Jun 2019"
+        label="结束时间"
+        placeholder="2016年6月"
       />
     </div>
   )

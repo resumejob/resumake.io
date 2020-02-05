@@ -33,11 +33,11 @@ function Projects({
   removeProjectKeyword
 }: Props) {
   return (
-    <Section heading="Your Projects">
+    <Section heading="项目经验">
       <LabeledInput
         name="headings.projects"
-        label="Section Heading"
-        placeholder="Projects"
+        label="显示名称"
+        placeholder="项目经验"
       />
       <Divider />
       {projects.map((project, i) => (
@@ -51,14 +51,14 @@ function Projects({
       ))}
       <div>
         <Button onClick={addProject} type="button">
-          Add Project
+          增加
         </Button>
         <Button
           onClick={removeProject}
           disabled={projects.length === 1}
           type="button"
         >
-          Remove Project
+          删除
         </Button>
       </div>
     </Section>

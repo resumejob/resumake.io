@@ -32,7 +32,7 @@ function Logo({ big }: Props) {
   return (
     <Text big={big}>
       <StyledLink to="/">
-        resu<Accent>make</Accent>
+        ResumeJob<Accent>简历</Accent>
       </StyledLink>
     </Text>
   )

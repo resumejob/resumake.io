@@ -284,15 +284,15 @@ class Home extends Component<Props> {
           <LeftSection>
             <Logo big />
             <PrimaryButton to="/generator" onClick={this.clearState}>
-              Make New Resume
+              新的简历
             </PrimaryButton>
             {hasPrevSession && (
               <Button to="/generator" onClick={clearPreview}>
-                Continue Session
+                继续编辑
               </Button>
             )}
             <ImportRow>
-              <Label htmlFor="import-json">Import JSON</Label>
+              <Label htmlFor="import-json">导入 JSON</Label>
               <Input
                 id="import-json"
                 type="file"

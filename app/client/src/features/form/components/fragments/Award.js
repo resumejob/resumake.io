@@ -16,23 +16,23 @@ function Award({ index }: Props) {
       {index > 0 ? <Divider /> : null}
       <LabeledInput
         name={`awards[${index}].title`}
-        label="Award Name"
-        placeholder="Supreme Hacker"
+        label="奖项名"
+        placeholder="国家一等奖学金"
       />
       <LabeledInput
         name={`awards[${index}].date`}
-        label="Award Date"
-        placeholder="May 2015"
+        label="时间"
+        placeholder="2015年1月"
       />
       <LabeledInput
         name={`awards[${index}].awarder`}
-        label="Awarder"
-        placeholder="HackNY"
+        label="奖励机构"
+        placeholder="国家教育部"
       />
       <LabeledInput
         name={`awards[${index}].summary`}
-        label="Summary"
-        placeholder="Recognized for creating the most awesome project at a hackathon."
+        label="简述"
+        placeholder="国家奖学金也是当前高等学校学生能够获得的荣誉等级最高的国家级奖学金。"
       />
     </div>
   )
