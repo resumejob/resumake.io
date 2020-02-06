@@ -82,7 +82,7 @@ const generator: Template2Generator = {
         let degreeLine = ''
 
         if (studyType && area) {
-          degreeLine = `${studyType} in ${area}`
+          degreeLine = `${studyType} / ${area}`
         } else if (studyType || area) {
           degreeLine = studyType || area
         }
@@ -265,6 +265,8 @@ const generator: Template2Generator = {
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%% Themes: Awesome-CV
     \\documentclass[]{awesome-cv}
+    \\usepackage{xeCJK}
+    \\setCJKmainfont{FZShuSong\-Z01S}
     \\usepackage{textcomp}
     %%% Override a directory location for fonts(default: 'fonts/')
     \\fontdir[fonts/]
