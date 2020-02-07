@@ -28,6 +28,10 @@ injectGlobal`
     color: ${colors.foreground};
   }
 
+  #resumejob-link {
+    color: white;
+  }
+  
   ::selection {
     background: ${colors.primary};
     color: white;
