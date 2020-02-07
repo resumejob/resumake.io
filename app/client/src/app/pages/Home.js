@@ -311,6 +311,9 @@ class Home extends Component<Props> {
                 <Icon size={22} type="help" />
               </HelpButton>
             </ImportRow>
+            <a id="resumejob-link" href="http://resumejob.github.io/">
+              简历评测 | 模拟面试
+            </a>
           </LeftSection>
           <RightSection>
             <ResumePreview>
@@ -321,13 +324,10 @@ class Home extends Component<Props> {
           </RightSection>
         </Main>
         <Footer>
-          <Copyright>© 2018 Saad Quadri</Copyright>
+          <Copyright>© 2020 ResumeJob </Copyright>
           <Links>
             <Link to="/about">About</Link>
-            <a href="https://github.com/saadq/resumake">Source</a>
-            <a href="https://github.com/saadq/resumake/issues">Issues</a>
-            <a href="mailto:saad@saadq.com">Contact</a>
-            <a href="https://www.paypal.me/saadquadri">Donate</a>
+            <a href="mailto:contact@osjobs.net">Contact</a>
           </Links>
         </Footer>
       </Wrapper>
