@@ -232,6 +232,8 @@ function template6(values: SanitizedValues) {
 
   return stripIndent`
     \\documentclass[10pt]{article}
+    \\usepackage{xeCJK}
+    \\setCJKmainfont{FZShuSong\-Z01S}
     \\usepackage[english]{babel}
     \\input{config/minimal-resume-config}
     \\begin{document}

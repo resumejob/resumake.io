@@ -362,6 +362,8 @@ function template4(values: SanitizedValues) {
   return stripIndent`
     ${generator.resumeHeader()}
     \\documentclass[]{deedy-resume-openfont}
+    \\usepackage{xeCJK}
+    \\setCJKmainfont{FZShuSong\-Z01S}
 
     \\begin{document}
     ${values.sections
