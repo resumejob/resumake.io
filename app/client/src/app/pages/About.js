@@ -214,136 +214,35 @@ function About() {
       <Header>
         <Logo big />
         <p>
-          Resumake is a tool for automatically generating beautiful resumes.
+          ResumeJob 简历生成器方便用户生成排版整齐的 PDF 简历。
         </p>
         <p>
-          The webapp was made by{' '}
-          <Link href="http://saadq.com">Saad Quadri</Link> and was built with
-          Node.js, Koa, React, Redux, and Flow.
+          这个应用大部分代码基于 Saad Quadri 的 MIT 协议的 Resumake 项目二次修改，
+          我们增加了中文支持以及本地化的翻译。此项目获得的一部分利润我们也会捐献
+          给 Saad Quadri。谢谢他优秀的工作。
         </p>
       </Header>
       <SectionDivider />
       <Content>
         <section>
-          <Heading>Help</Heading>
-          <Question>How do I use this website?</Question>
+          <Heading>帮助</Heading>
+          <Question>如何使用此网站？</Question>
           <ListAnswer>
-            <li>Choose a template.</li>
-            <li>Fill in as much (or as little) info as you want.</li>
+            <li>1. 选择一个模版</li>
+            <li>2. 填写你的简历信息</li>
             <li>
-              Press the <strong>MAKE</strong> button to see your output.
+              3. 点击 <strong>预览</strong> 按钮进行预览简历。
             </li>
             <li>
-              Once you're happy, download the resume as a PDF, JSON, or TeX
-              document.
+              4. 点击 预览页面中的 PDF 下载 PDF 版本的简历。
             </li>
           </ListAnswer>
-          <Question>
-            How do I report a bug or submit a feature request?
-          </Question>
-          <Answer>
-            Feel free to open an issue{' '}
-            <Link href="https://github.com/saadq/resumake/issues">here</Link>.
-          </Answer>
-          <Question>Are you accepting open-source contributions?</Question>
-          <Answer>
-            Definitely! I'm always happy to help out first-time contributors to
-            the project. You can check out the{' '}
-            <Link href="https://github.com/saadq/resumake/tree/master/contributing.md">
-              <code>contributing.md</code>
-            </Link>{' '}
-            for an in-depth guide on how to get started on working on this
-            project.
-          </Answer>
-          <Question>How can I donate or say thanks?</Question>
-          <Answer>
-            Glad you liked the project! If you want to show your appreciation,{' '}
-            <Link href="https://www.paypal.me/saadquadri">donations</Link> are
-            very much appreciated. Or, if you'd just like to send me a message,
-            you can send me an <Link href="mailto:saad@saadq.com">email</Link>.
-          </Answer>
+          <Question> 如何提交 Bug？</Question>
+         <Answer>
+           <Link href="mailto:contact@osjobs.net">可以发送邮件给我们</Link>.
+         </Answer>
         </section>
         <SectionDivider />
-        <section>
-          <Heading>Credits</Heading>
-          <p>
-            A huge thanks to all the original creators of the LaTeX templates:
-          </p>
-          <ul>
-            <li>
-              <Link href="https://www.rpi.edu/dept/arc/training/latex/resumes/">
-                Rensselaer Career Development Center
-              </Link>
-            </li>
-            <li>
-              <Link href="https://github.com/posquit0">Byungjin Park</Link>
-            </li>
-            <li>
-              <Link href="https://github.com/sc932">Scott Clark</Link>
-            </li>
-            <li>
-              <Link href="https://github.com/deedy">Debarghya Das</Link>
-            </li>
-            <li>
-              <Link href="https://github.com/xdanaux">Xavier Danaux</Link>
-            </li>
-            <li>
-              <Link href="https://github.com/RatulSaha">Ratul Saha</Link>
-            </li>
-            <li>
-              <Link href="https://github.com/dnl-blkv">Daniil Belyakov</Link>
-            </li>
-            <li>
-              <Link href="https://www.overleaf.com/latex/templates/your-new-cv/xqzhcmqkqrtw">
-                Frits Wenneker
-              </Link>
-            </li>
-          </ul>
-        </section>
-        <SectionDivider />
-        <section>
-          <Heading>Style Guide</Heading>
-          <h3>Logo</h3>
-          <Box>
-            <Logo />
-          </Box>
-          <h3>Colors</h3>
-          <Box>
-            <Color color={colors.primary} dark>
-              {colors.primary}
-            </Color>
-            <Color color={colors.error}>{colors.error}</Color>
-            <Color color={colors.background}>{colors.background}</Color>
-            <Color color={colors.borders}>{colors.borders}</Color>
-            <Color color={colors.foreground} dark>
-              {colors.foreground}
-            </Color>
-            <Color color="#ffffff" dark>
-              #ffffff
-            </Color>
-          </Box>
-          <h3>Buttons</h3>
-          <Box>
-            <PrimaryButton>Button</PrimaryButton>
-            <UnfilledButton>Button</UnfilledButton>
-            <Button>Button</Button>
-            <RoundedButton>
-              <Icon type="add" />
-            </RoundedButton>
-          </Box>
-          <h3>Form</h3>
-          <VerticalBox>
-            <FormLabel>Form Input</FormLabel>
-            <FormInput placeholder="Text goes here" />
-            <FormLabel>Section Divider</FormLabel>
-            <FormDivider />
-          </VerticalBox>
-          <h3>Loading</h3>
-          <VerticalBox>
-            <Loader />
-            <LoadingBar status="pending" />
-          </VerticalBox>
-        </section>
       </Content>
     </Wrapper>
   )
