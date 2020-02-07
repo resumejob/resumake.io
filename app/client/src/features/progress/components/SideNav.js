@@ -84,7 +84,7 @@ class SideNav extends Component<Props> {
             onSortEnd={this.onSortEnd}
           />
           <PrimaryButton type="submit" form="resume-form">
-            创建
+            预览
           </PrimaryButton>
         </Nav>
       </Aside>
