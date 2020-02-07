@@ -228,13 +228,13 @@ function About() {
           <Heading>帮助</Heading>
           <Question>如何使用此网站？</Question>
           <ListAnswer>
-            <li>1. 选择一个模版</li>
-            <li>2. 填写你的简历信息</li>
+            <li>选择一个模版</li>
+            <li>填写你的简历信息</li>
             <li>
-              3. 点击 <strong>预览</strong> 按钮进行预览简历。
+              点击 <strong>预览</strong> 按钮进行预览简历。
             </li>
             <li>
-              4. 点击 预览页面中的 PDF 下载 PDF 版本的简历。
+              点击 预览页面中的 PDF 下载 PDF 版本的简历。
             </li>
           </ListAnswer>
           <Question> 如何提交 Bug？</Question>
