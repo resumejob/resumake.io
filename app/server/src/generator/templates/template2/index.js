@@ -38,7 +38,7 @@ const generator: Template2Generator = {
     const emailLine = email ? `{\\faEnvelope\\ ${email}}` : ''
     const phoneLine = phone ? `{\\faMobile\\ ${phone}}` : ''
     const addressLine = location.address
-      ? `{\\faMapMarker\\ ${location.address}}`
+      ? `{\\faUser\\ ${location.address}}`
       : ''
     const websiteLine = website ? `{\\faLink\\ ${website}}` : ''
     const info = [emailLine, phoneLine, addressLine, websiteLine]
