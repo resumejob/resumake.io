@@ -302,7 +302,7 @@ class Home extends Component<Props> {
                 onClick={() => {
                   if (!toast.isActive(this.toastId)) {
                     this.toastId = toast.info(
-                      "When you're done working on your resume, you can save it as a JSON which can be imported here to continue progress.",
+                      "当你编辑好简历之后，你可以将它保存为 JSON 格式，然后在这里导入进行修改.",
                       { position: toast.POSITION.TOP_LEFT }
                     )
                   }
