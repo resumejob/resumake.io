@@ -22,7 +22,7 @@ function Award({ index }: Props) {
       <LabeledInput
         name={`awards[${index}].date`}
         label="时间"
-        placeholder="2015年1月"
+        placeholder="2015年"
       />
       <LabeledInput
         name={`awards[${index}].awarder`}

@@ -38,7 +38,7 @@ function Work({
     <Section heading="工作经历">
       <LabeledInput
         name="headings.work"
-        label="Section Heading"
+        label="显示名称"
         placeholder="工作经历"
       />
       <Divider />

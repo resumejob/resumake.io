@@ -33,11 +33,11 @@ function Skills({
   removeSkillKeyword
 }: Props) {
   return (
-    <Section heading="Your Skills">
+    <Section heading="技能列表">
       <LabeledInput
         name="headings.skills"
         label="显示名称"
-        placeholder="Skills"
+        placeholder="技能列表"
       />
       <Divider />
       {skills.map((skill, i) => (
