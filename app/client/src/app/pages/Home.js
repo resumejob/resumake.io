@@ -327,7 +327,7 @@ class Home extends Component<Props> {
           <Copyright>© 2020 ResumeJob </Copyright>
           <Links>
             <Link to="/about">About</Link>
-            <a href="mailto:contact@osjobs.net">Contact</a>
+            <a href="mailto:contact@resumejob.net">Contact</a>
           </Links>
         </Footer>
       </Wrapper>
