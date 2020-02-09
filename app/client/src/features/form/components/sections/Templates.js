@@ -36,7 +36,7 @@ const Image = styled.img`
   max-width: 100%;
   transform: translateY(0);
   transition: all 0.4s ease-out;
-  opacity: ${props => (props.active ? '1' : '0.65')};
+  opacity: ${props => (props.active ? '1' : '0.15')};
   ${props =>
     props.active
       ? 'box-shadow: 0 2px 20px #fff, 0 0 0 1px #fff;'
@@ -52,7 +52,6 @@ const TemplateButton = Button.extend`
   color: ${props => (props.active ? 'white' : 'silver')};
   transition: all 0.4s ease;
   padding: 10px 20px;
-
   &:hover {
     background: ${colors.primary};
     color: ${colors.background};
