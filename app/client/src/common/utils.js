@@ -9,7 +9,7 @@ ChineseMap.set("education", "教育")
 ChineseMap.set("work", "工作经历")
 ChineseMap.set("skills", "技能列表")
 ChineseMap.set("projects", "项目经验")
-ChineseMap.set("awards", "奖项")
+ChineseMap.set("awards", "其他")
 
 function titleCase(str: string): string {
     return ChineseMap.get(str)

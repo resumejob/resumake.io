@@ -16,7 +16,7 @@ function Award({ index }: Props) {
       {index > 0 ? <Divider /> : null}
       <LabeledInput
         name={`awards[${index}].title`}
-        label="奖项名"
+        label="名称"
         placeholder="国家一等奖学金"
       />
       <LabeledInput
@@ -26,7 +26,7 @@ function Award({ index }: Props) {
       />
       <LabeledInput
         name={`awards[${index}].awarder`}
-        label="奖励机构"
+        label="机构"
         placeholder="国家教育部"
       />
       <LabeledInput

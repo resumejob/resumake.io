@@ -38,7 +38,7 @@ const generator: Generator = {
       % Chapter: Education
       % ------------------
 
-      \\chap{${heading ? heading.toUpperCase() : 'EDUCATION'}}{
+      \\chap{${heading ? heading.toUpperCase() : '教育背景'}}{
 
       ${education.map(school => {
         const {
@@ -90,7 +90,7 @@ const generator: Generator = {
     return source`
       % Chapter: Work Experience
       % ------------------------
-      \\chap{${heading ? heading.toUpperCase() : 'EXPERIENCE'}}{
+      \\chap{${heading ? heading.toUpperCase() : '工作经历'}}{
 
       ${work.map(job => {
         const {
@@ -143,7 +143,7 @@ const generator: Generator = {
       % Chapter: Skills
       % ------------------------
 
-      \\chap{${heading ? heading.toUpperCase() : 'SKILLS'}}{
+      \\chap{${heading ? heading.toUpperCase() : '技能列表'}}{
       \\begin{newitemize}
         ${skills.map(skill => {
           const { name = '', keywords = [] } = skill
@@ -174,7 +174,7 @@ const generator: Generator = {
       % Chapter: Projects
       % ------------------------
 
-      \\chap{${heading ? heading.toUpperCase() : 'PROJECTS'}}{
+      \\chap{${heading ? heading.toUpperCase() : '项目经验'}}{
 
         ${projects.map(project => {
           const {
@@ -209,7 +209,7 @@ const generator: Generator = {
       % Chapter: Awards
       % ------------------------
 
-      \\chap{${heading ? heading.toUpperCase() : 'AWARDS'}}{
+      \\chap{${heading ? heading.toUpperCase() : '其他'}}{
 
         ${awards.map(award => {
           const { title = '', summary = '', awarder = '', date = '' } = award

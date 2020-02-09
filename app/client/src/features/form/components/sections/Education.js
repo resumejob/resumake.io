@@ -23,7 +23,7 @@ function Education({ education, addSchool, removeSchool }: Props) {
     <Section heading="教育">
       <LabeledInput
         name="headings.education"
-        label="显示名称"
+        label="标题（可选）"
         placeholder="教育背景"
       />
       <Divider />

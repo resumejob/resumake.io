@@ -61,12 +61,11 @@ const generator: Template2Generator = {
     if (!education) {
       return ''
     }
-
     return source`
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       %     Education
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \\cvsection{${heading || 'Education'}}
+      \\cvsection{${heading || '教育背景'}}
       \\begin{cventries}
       ${education.map(school => {
         const {
@@ -121,7 +120,7 @@ const generator: Template2Generator = {
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       %     Experience
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \\cvsection{${heading || 'Experience'}}
+      \\cvsection{${heading || '工作经历'}}
       \\begin{cventries}
       ${work.map(job => {
         const {
@@ -171,7 +170,7 @@ const generator: Template2Generator = {
     }
 
     return source`
-      \\cvsection{${heading || 'Skills'}}
+      \\cvsection{${heading || '技能列表'}}
       \\begin{cventries}
       \\cventry
       {}
@@ -199,7 +198,7 @@ const generator: Template2Generator = {
     }
 
     return source`
-      \\cvsection{${heading || 'Projects'}}
+      \\cvsection{${heading || '项目经验'}}
       \\begin{cventries}
       ${projects.map(project => {
         const { name, description, keywords = [], url } = project
@@ -225,7 +224,7 @@ const generator: Template2Generator = {
     }
 
     return source`
-      \\cvsection{${heading || 'Awards'}}
+      \\cvsection{${heading || '其他'}}
       \\begin{cvhonors}
       ${awards.map(award => {
         const { title, summary, date, awarder } = award
@@ -295,7 +294,8 @@ const generator: Template2Generator = {
 
 function template2(values: SanitizedValues) {
   const { headings = {} } = values
-
+  console.log(values.education);
+  console.log(headings.education);
   return stripIndent`
     ${generator.resumeHeader()}
     \\begin{document}

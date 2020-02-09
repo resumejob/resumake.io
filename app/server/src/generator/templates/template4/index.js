@@ -74,7 +74,7 @@ const generator: Template4Generator = {
       %     Education
       %
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \\section{${heading || 'Education'}}
+      \\section{${heading || '教育背景'}}
       \\raggedright
       ${education.map(school => {
         const {
@@ -148,7 +148,7 @@ const generator: Template4Generator = {
       %     Experience
       %
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \\section{${heading || 'Experience'}}
+      \\section{${heading || '工作经历'}}
       ${work.map(job => {
         const {
           company,
@@ -215,7 +215,7 @@ const generator: Template4Generator = {
       %     Skills
       %
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \\section{${heading || 'Skills'}}
+      \\section{${heading || '技能列表'}}
       \\raggedright
       \\begin{tabular}{ l l }
       ${skills.map(skill => {
@@ -238,7 +238,7 @@ const generator: Template4Generator = {
       %     Projects
       %
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \\section{${heading || 'Projects'}}
+      \\section{${heading || '项目经验'}}
       \\raggedright
       ${projects.map(project => {
         const { name, description, keywords, url } = project
@@ -288,7 +288,7 @@ const generator: Template4Generator = {
       %     Awards
       %
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \\section{${heading || 'Awards'}}
+      \\section{${heading || '其他'}}
       ${awards.map(award => {
         const { title, summary, date, awarder } = award
         const info = [awarder, date].filter(Boolean).join(' | ')
