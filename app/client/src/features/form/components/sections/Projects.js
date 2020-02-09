@@ -51,7 +51,7 @@ function Projects({
       ))}
       <div>
         <Button onClick={addProject} type="button">
-          增加
+          新建
         </Button>
         <Button
           onClick={removeProject}

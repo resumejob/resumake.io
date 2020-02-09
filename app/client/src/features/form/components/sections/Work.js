@@ -52,7 +52,7 @@ function Work({
         />
       ))}
       <Button onClick={addJob} type="button">
-        增加
+        新建
       </Button>
       <Button onClick={removeJob} disabled={work.length === 1} type="button">
         删除

@@ -209,7 +209,7 @@ const generator: Generator = {
       % Chapter: Awards
       % ------------------------
 
-      \\chap{${heading ? heading.toUpperCase() : '其他项'}}{
+      \\chap{${heading ? heading.toUpperCase() : '其他项目'}}{
 
         ${awards.map(award => {
           const { title = '', summary = '', awarder = '', date = '' } = award

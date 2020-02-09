@@ -20,17 +20,17 @@ type Props = {
 
 function Awards({ awards, addAward, removeAward }: Props) {
   return (
-    <Section heading="其他项">
+    <Section heading="其他项目">
       <LabeledInput
         name="headings.awards"
         label="标题（可选）"
-        placeholder="其他项"
+        placeholder="其他项目"
       />
       <Divider />
       {awards.map((award, i) => <Award key={i} index={i} />)}
       <div className="section-buttons">
         <Button onClick={addAward} type="button">
-          增加
+          新建
         </Button>
         <Button
           onClick={removeAward}

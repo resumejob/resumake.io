@@ -225,7 +225,7 @@ const generator: Template2Generator = {
     }
 
     return source`
-      \\cvsection{${heading || '其他项'}}
+      \\cvsection{${heading || '其他项目'}}
       \\begin{cvhonors}
       ${awards.map(award => {
         const { title, summary, date, awarder } = award

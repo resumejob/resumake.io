@@ -288,7 +288,7 @@ const generator: Template4Generator = {
       %     Awards
       %
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \\section{${heading || '其他项'}}
+      \\section{${heading || '其他项目'}}
       ${awards.map(award => {
         const { title, summary, date, awarder } = award
         const info = [awarder, date].filter(Boolean).join(' | ')

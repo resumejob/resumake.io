@@ -50,7 +50,7 @@ function Skills({
         />
       ))}
       <Button onClick={addSkill} type="button">
-        增加
+        新建
       </Button>
       <Button
         onClick={removeSkill}

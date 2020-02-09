@@ -29,7 +29,7 @@ function Education({ education, addSchool, removeSchool }: Props) {
       <Divider />
       {education.map((school, i) => <School key={i} index={i} />)}
       <Button onClick={addSchool} type="button">
-        增加
+        新建
       </Button>
       <Button
         onClick={removeSchool}
