@@ -20,11 +20,11 @@ type Props = {
 
 function Awards({ awards, addAward, removeAward }: Props) {
   return (
-    <Section heading="其他">
+    <Section heading="其他项">
       <LabeledInput
         name="headings.awards"
         label="标题（可选）"
-        placeholder="其他"
+        placeholder="其他项"
       />
       <Divider />
       {awards.map((award, i) => <Award key={i} index={i} />)}

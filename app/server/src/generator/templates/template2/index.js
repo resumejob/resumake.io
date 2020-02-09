@@ -61,6 +61,7 @@ const generator: Template2Generator = {
     if (!education) {
       return ''
     }
+    console.log(heading);
     return source`
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       %     Education
@@ -224,7 +225,7 @@ const generator: Template2Generator = {
     }
 
     return source`
-      \\cvsection{${heading || '其他'}}
+      \\cvsection{${heading || '其他项'}}
       \\begin{cvhonors}
       ${awards.map(award => {
         const { title, summary, date, awarder } = award
@@ -294,8 +295,6 @@ const generator: Template2Generator = {
 
 function template2(values: SanitizedValues) {
   const { headings = {} } = values
-  console.log(values.education);
-  console.log(headings.education);
   return stripIndent`
     ${generator.resumeHeader()}
     \\begin{document}
