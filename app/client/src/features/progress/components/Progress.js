@@ -130,7 +130,7 @@ function Progress({
         }
         hideOnDesktop
       >
-        {location.pathname.includes('mobile') ? 'Go Back' : 'Make'}
+        {location.pathname.includes('mobile') ? '返回' : '预览'}
       </MobileButton>
       <SectionButton
         type="button"
