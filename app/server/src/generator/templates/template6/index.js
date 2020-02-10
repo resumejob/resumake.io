@@ -51,13 +51,13 @@ const generator: Generator = {
           endDate = ''
         } = school
 
-        const degreeLine = [studyType, area].filter(Boolean).join(' ')
+        const degreeLine = [studyType, area].filter(Boolean).join(' / ')
         let dateRange = ''
 
         if (startDate && endDate) {
-          dateRange = `${startDate} – ${endDate}`
+          dateRange = `${startDate} --- ${endDate}`
         } else if (startDate) {
-          dateRange = `${startDate} – Present`
+          dateRange = `${startDate} --- 至今`
         } else {
           dateRange = endDate
         }
@@ -106,9 +106,9 @@ const generator: Generator = {
         let dutyLines = ''
 
         if (startDate && endDate) {
-          dateRange = `${startDate} – ${endDate}`
+          dateRange = `${startDate} --- ${endDate}`
         } else if (startDate) {
-          dateRange = `${startDate} – Present`
+          dateRange = `${startDate} --- 至今`
         } else {
           dateRange = endDate
         }

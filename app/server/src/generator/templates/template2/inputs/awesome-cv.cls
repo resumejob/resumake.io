@@ -526,7 +526,7 @@
   \phantomsection{}
   \sectionstyle{#1}
   \color{gray}\vhrulefill{0.9pt}
-  \par\nobreak\addvspace{1ex}
+  \par\nobreak\addvspace{2ex}
 }
 
 % Define a subsection for CV
@@ -616,7 +616,7 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{
-  \vspace{-4mm}
+  \vspace{-2mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
@@ -640,7 +640,7 @@
 % Define a paragraph for cvletter
 % Usage: \cvparagraph{<paragraph-title>}
 \newcommand{\cvparagraph}[1]{
-  \par\addvspace{2.5ex}
+  \par\addvspace{4.5ex}
   \phantomsection{}
   \paragraphstyle{#1}
   \color{gray}\vhrulefill{0.9pt}

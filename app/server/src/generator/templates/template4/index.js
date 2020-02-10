@@ -95,7 +95,7 @@ const generator: Template4Generator = {
         }
 
         if (studyType && area) {
-          line1 += `\\descript{| ${studyType} ${area}}`
+          line1 += `\\descript{| ${studyType} / ${area}}`
         } else if (studyType) {
           line1 += `\\descript{| ${studyType}}`
         } else if (area) {
@@ -105,9 +105,9 @@ const generator: Template4Generator = {
         let dateRange = ''
 
         if (startDate && endDate) {
-          dateRange = `${startDate} - ${endDate}`
+          dateRange = `${startDate} --- ${endDate}`
         } else if (startDate) {
-          dateRange = `${startDate} - Present`
+          dateRange = `${startDate} --- 至今`
         } else {
           dateRange = endDate
         }
@@ -172,9 +172,9 @@ const generator: Template4Generator = {
         }
 
         if (startDate && endDate) {
-          dateRange = `${startDate} – ${endDate}`
+          dateRange = `${startDate} --- ${endDate}`
         } else if (startDate) {
-          dateRange = `${startDate} – Present`
+          dateRange = `${startDate} --- 至今`
         } else {
           dateRange = endDate
         }

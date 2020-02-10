@@ -61,12 +61,11 @@ const generator: Template2Generator = {
     if (!education) {
       return ''
     }
-    console.log(heading);
     return source`
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       %     Education
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \\cvsection{${heading || '教育背景'}}
+      \\cvsection{${heading || "教育背景"}}
       \\begin{cventries}
       ${education.map(school => {
         const {
@@ -90,9 +89,9 @@ const generator: Template2Generator = {
         let dateRange = ''
 
         if (startDate && endDate) {
-          dateRange = `${startDate} – ${endDate}`
+          dateRange = `${startDate} ---  ${endDate}`
         } else if (startDate) {
-          dateRange = `${startDate} – Present`
+          dateRange = `${startDate} ---  至今`
         } else {
           dateRange = endDate
         }
@@ -121,7 +120,7 @@ const generator: Template2Generator = {
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       %     Experience
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \\cvsection{${heading || '工作经历'}}
+      \\cvsection{${heading || "工作经历"}}
       \\begin{cventries}
       ${work.map(job => {
         const {
@@ -137,9 +136,9 @@ const generator: Template2Generator = {
         let dutyLines = ''
 
         if (startDate && endDate) {
-          dateRange = `${startDate} – ${endDate}`
+          dateRange = `${startDate} --- ${endDate}`
         } else if (startDate) {
-          dateRange = `${startDate} – Present`
+          dateRange = `${startDate} --- 至今`
         } else {
           dateRange = endDate
         }
@@ -171,7 +170,7 @@ const generator: Template2Generator = {
     }
 
     return source`
-      \\cvsection{${heading || '技能列表'}}
+      \\cvsection{${heading || "技能列表"}}
       \\begin{cventries}
       \\cventry
       {}
@@ -199,7 +198,7 @@ const generator: Template2Generator = {
     }
 
     return source`
-      \\cvsection{${heading || '项目经验'}}
+      \\cvsection{${heading || "项目经验"}}
       \\begin{cventries}
       ${projects.map(project => {
         const { name, description, keywords = [], url } = project
@@ -225,7 +224,7 @@ const generator: Template2Generator = {
     }
 
     return source`
-      \\cvsection{${heading || '其他项目'}}
+      \\cvsection{${heading || "其他项目"}}
       \\begin{cvhonors}
       ${awards.map(award => {
         const { title, summary, date, awarder } = award
