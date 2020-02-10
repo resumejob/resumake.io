@@ -95,7 +95,7 @@ class Templates extends Component<Props, State> {
     const { isLightboxOpen, lightboxImageIndex } = this.state
 
     return (
-      <Section heading="选择模版">
+      <Section heading="模版可随时改变">
         <Grid>
           {images.map((src, i) => (
             <Div key={i}>
@@ -109,7 +109,7 @@ class Templates extends Component<Props, State> {
                 type="button"
                 onClick={() => selectTemplate(i + 1)}
               >
-                Template {i + 1}
+                模版 {i + 1}
               </TemplateButton>
             </Div>
           ))}

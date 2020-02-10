@@ -35,7 +35,7 @@ function Work({
   removeJobHighlight
 }: Props) {
   return (
-    <Section heading="工作经历">
+    <Section heading="你的工作经历">
       <LabeledInput
         name="headings.work"
         label="标题（可选）"

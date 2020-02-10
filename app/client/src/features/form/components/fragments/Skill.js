@@ -35,15 +35,15 @@ function Skill({ keywords, index, addKeyword, removeKeyword }: Props) {
       {index > 0 ? <Divider /> : null}
       <LabeledInput
         name={`skills[${index}].name`}
-        label="技能列表"
-        placeholder="编程语言"
+        label="描述"
+        placeholder="后端框架"
       />
       <Label>技能点</Label>
       {keywords.map((keyword, i) => (
         <div key={i}>
           <MiniInput
             name={`skills[${index}].keywords[${i}]`}
-            placeholder="Java"
+            placeholder="Spring"
             component="input"
           />
           {i === keywords.length - 1 && (

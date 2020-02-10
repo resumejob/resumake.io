@@ -20,7 +20,7 @@ type Props = {
 
 function Awards({ awards, addAward, removeAward }: Props) {
   return (
-    <Section heading="其他项目">
+    <Section heading="你的其他项目">
       <LabeledInput
         name="headings.awards"
         label="标题（可选）"

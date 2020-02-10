@@ -8,16 +8,16 @@ import LabeledInput from '../fragments/LabeledInput'
 
 function Profile() {
   return (
-    <Section heading="个人信息">
+    <Section heading="你的个人信息">
       <LabeledInput
         name="basics.name"
-        label="全名"
-        placeholder="张了了"
+        label="* 全名"
+        placeholder="张学礼"
       />
       <LabeledInput
         name="basics.email"
-        label="邮箱地址"
-        placeholder="zhangliao@gmail.com"
+        label="* 邮箱地址"
+        placeholder="xueli@gmail.com"
       />
       <LabeledInput
         name="basics.phone"
@@ -26,12 +26,12 @@ function Profile() {
       />
       <LabeledInput
         name="basics.location.address"
-        label="求职意向"
+        label="* 求职意向"
         placeholder="Java 开发工程师"
       />
       <LabeledInput
         name="basics.website"
-        label="链接"
+        label="其他链接"
         placeholder="github.com/myname"
       />
     </Section>

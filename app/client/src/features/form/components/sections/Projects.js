@@ -33,7 +33,7 @@ function Projects({
   removeProjectKeyword
 }: Props) {
   return (
-    <Section heading="项目经验">
+    <Section heading="你的项目经验">
       <LabeledInput
         name="headings.projects"
         label="标题（可选）"

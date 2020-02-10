@@ -119,7 +119,7 @@ function Progress({
         onClick={() => history.push(`/generator/${prev}`)}
         disabled={curr === sections[0]}
       >
-        ← Prev
+        ← 上一项
       </SectionButton>
       <Bar progress={progress} hideOnMobile />
       <MobileButton
@@ -137,7 +137,7 @@ function Progress({
         onClick={() => history.push(`/generator/${next}`)}
         disabled={curr === sections[sections.length - 1]}
       >
-        Next →
+        下一项 →
       </SectionButton>
     </Wrapper>
   )

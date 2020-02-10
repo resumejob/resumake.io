@@ -33,7 +33,7 @@ function Skills({
   removeSkillKeyword
 }: Props) {
   return (
-    <Section heading="技能列表">
+    <Section heading="你的技能列表">
       <LabeledInput
         name="headings.skills"
         label="标题（可选）"

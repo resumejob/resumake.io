@@ -41,30 +41,30 @@ function Job({ highlights, index, addHighlight, removeHighlight }: Props) {
       {index > 0 ? <Divider /> : null}
       <LabeledInput
         name={`work[${index}].company`}
-        label="公司名称"
+        label="* 公司名称"
         placeholder="谷歌"
       />
       <LabeledInput
         name={`work[${index}].position`}
-        label="岗位"
+        label="* 岗位"
         placeholder="Java 工程师"
       />
       <LabeledInput
         name={`work[${index}].location`}
-        label="公司地址"
+        label="所在城市"
         placeholder="上海"
       />
       <LabeledInput
         name={`work[${index}].startDate`}
-        label="开始时间"
+        label="* 开始时间"
         placeholder="2016年11月"
       />
       <LabeledInput
         name={`work[${index}].endDate`}
-        label="结束时间"
-        placeholder="2018年11月"
+        label="* 结束时间"
+        placeholder="默认为至今"
       />
-      <Label>工作职责</Label>
+      <Label>* 工作职责</Label>
       {highlights.map((highlight, i) => (
         <Row key={i}>
           <MiniInput

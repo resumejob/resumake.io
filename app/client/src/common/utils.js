@@ -3,7 +3,7 @@
  */
 
 let ChineseMap = new Map()
-ChineseMap.set("templates", "模版")
+ChineseMap.set("templates", "选择模版")
 ChineseMap.set("profile", "基本资料")
 ChineseMap.set("education", "教育背景")
 ChineseMap.set("work", "工作经历")

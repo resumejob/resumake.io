@@ -35,13 +35,13 @@ function Project({ keywords, index, addKeyword, removeKeyword }: Props) {
       {index > 0 ? <Divider /> : null}
       <LabeledInput
         name={`projects[${index}].name`}
-        label="项目名称"
-        placeholder="Gmail"
+        label="* 项目名称"
+        placeholder="Gmail 邮箱"
       />
       <LabeledInput
         name={`projects[${index}].description`}
-        label="项目描述"
-        placeholder="让所有人都能使用的最方便的邮箱。"
+        label="* 项目描述"
+        placeholder="Gmail 最初推出時提供 1GB 的免费空间，致力打造一个让所有人都能使用的最方便的邮箱。"
       />
       <LabeledInput
         name={`projects[${index}].url`}
