@@ -260,6 +260,10 @@ class Home extends Component<Props> {
     window.localStorage.clear()
   }
 
+  handleClick() {
+    window.location.assign('https://zhuanlan.zhihu.com/p/105872333');
+  }
+
   render() {
     const {
       hasPrevSession,
@@ -284,12 +288,26 @@ class Home extends Component<Props> {
           <LeftSection>
             <Logo big />
             <PrimaryButton to="/generator" onClick={this.clearState}>
-              新的简历
+            新的简历
             </PrimaryButton>
             {hasPrevSession && (
+            <ImportRow>
               <Button to="/generator" onClick={clearPreview}>
                 继续编辑
               </Button>
+              <HelpButton
+                onClick={() => {
+                  if (!toast.isActive(this.toastId)) {
+                    this.toastId = toast.info(
+                      "浏览器会自动保存最近一次简历编辑的进度，方便继续编辑。",
+                      { position: toast.POSITION.TOP_LEFT }
+                    )
+                  }
+                }}
+              >
+                <Icon size={22} type="help" />
+              </HelpButton>
+            </ImportRow>
             )}
             <ImportRow>
               <Label htmlFor="import-json">导入 JSON</Label>
@@ -302,7 +320,7 @@ class Home extends Component<Props> {
                 onClick={() => {
                   if (!toast.isActive(this.toastId)) {
                     this.toastId = toast.info(
-                      "当你编辑好简历之后，你可以将它保存为 JSON 格式，然后在这里导入进行修改.",
+                      "当你编辑好简历之后，你可以将它保存为 JSON 格式，然后在这里导入进行修改。",
                       { position: toast.POSITION.TOP_LEFT }
                     )
                   }

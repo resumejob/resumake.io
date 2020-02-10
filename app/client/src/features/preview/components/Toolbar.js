@@ -160,10 +160,10 @@ function Toolbar({
     <Wrapper>
       <ButtonGroup>
         <ToolButton href={resumeURL} download="resume.pdf">
-          <Icon type="file_download" /> PDF
+          <Icon type="file_download" /> 下载 PDF
         </ToolButton>
         <ToolButton href={jsonURL} download="resume.json">
-          <Icon type="file_download" /> JSON
+          <Icon type="file_download" /> 导出 JSON
         </ToolButton>
       </ButtonGroup>
       <Pagination>
