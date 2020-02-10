@@ -52,7 +52,7 @@ const ButtonGroup = styled.div`
 const Button = styled.a`
   text-align: center;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 15px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
