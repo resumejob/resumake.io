@@ -25,6 +25,11 @@ const Button = styled.button`
     border-color: ${lighten(0.2, colors.primary)};
     color: ${lighten(0.2, colors.primary)};
   }
+  
+  ${props =>
+    props.active
+      ? 'background: #56c9aa !important; color: #14171d !important;'
+      : ''} 
 
   &:hover {
     background: ${colors.primary};
