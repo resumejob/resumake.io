@@ -109,7 +109,7 @@ class Templates extends Component<Props, State> {
                 type="button"
                 onClick={() => selectTemplate(i + 1)}
               >
-                模版 {i + 1}
+                选择模版 {i + 1}
               </TemplateButton>
             </Div>
           ))}

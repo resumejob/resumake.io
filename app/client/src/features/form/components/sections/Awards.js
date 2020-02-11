@@ -23,7 +23,7 @@ function Awards({ awards, addAward, removeAward }: Props) {
     <Section heading="你的其他项目">
       <LabeledInput
         name="headings.awards"
-        label="标题（可选）"
+        label="模块名称（可选）"
         placeholder="其他项目"
       />
       <Divider />

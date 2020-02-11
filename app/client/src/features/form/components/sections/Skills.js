@@ -36,7 +36,7 @@ function Skills({
     <Section heading="你的技能列表">
       <LabeledInput
         name="headings.skills"
-        label="标题（可选）"
+        label="模块名称（可选）"
         placeholder="技能列表"
       />
       <Divider />

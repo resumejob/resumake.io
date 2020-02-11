@@ -36,7 +36,7 @@ function Projects({
     <Section heading="你的项目经验">
       <LabeledInput
         name="headings.projects"
-        label="标题（可选）"
+        label="模块名称（可选）"
         placeholder="项目经验"
       />
       <Divider />

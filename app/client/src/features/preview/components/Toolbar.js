@@ -170,7 +170,7 @@ function Toolbar({
         <PageButton onClick={prevPage}>
           <Icon type="arrow_back" />
         </PageButton>
-        <PageNumber>Page {currPage}</PageNumber>
+        <PageNumber>页面 {currPage}</PageNumber>
         <PageButton onClick={nextPage}>
           <Icon type="arrow_forward" />
         </PageButton>
