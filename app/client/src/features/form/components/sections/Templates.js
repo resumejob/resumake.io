@@ -95,7 +95,7 @@ class Templates extends Component<Props, State> {
     const { isLightboxOpen, lightboxImageIndex } = this.state
 
     return (
-      <Section heading="模版可随时改变">
+      <Section heading="可随时修改模版">
         <Grid>
           {images.map((src, i) => (
             <Div key={i}>
