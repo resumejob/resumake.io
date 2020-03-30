@@ -329,7 +329,7 @@ class Home extends Component<Props> {
                 <Icon size={22} type="help" />
               </HelpButton>
             </ImportRow>
-            <a id="resumejob-link" href="http://resumejob.github.io/">
+            <a id="resumejob-link" href="https://resumejob.net/">
               简历评测 | 模拟面试
             </a>
           </LeftSection>
