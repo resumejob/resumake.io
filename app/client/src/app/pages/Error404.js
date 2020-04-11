@@ -86,7 +86,7 @@ function Error404() {
       <ErrorDescription>
         We can’t seem to find this page. Please enjoy this comic before{' '}
         <ErrorLink onClick={() => window.history.back()}>going back</ErrorLink>{' '}
-        or <ErrorLink href="https://resumejob.net">going home</ErrorLink>.
+        or <ErrorLink href="https://osjobs.net">going home</ErrorLink>.
       </ErrorDescription>
       <ComicContainer>
         <ComicImage src={comic} alt="Resume Comic" />
@@ -94,7 +94,7 @@ function Error404() {
       </ComicContainer>
       <ButtonContainer>
         <Button onClick={() => window.history.back()}>Go Back</Button>
-        <LinkButton href="https://resumejob.net">Go Home</LinkButton>
+        <LinkButton href="https://osjobs.net">Go Home</LinkButton>
       </ButtonContainer>
     </Wrapper>
   )

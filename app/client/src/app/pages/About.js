@@ -239,7 +239,7 @@ function About() {
           </ListAnswer>
           <Question> 如何提交 Bug？</Question>
          <Answer>
-           <Link href="mailto:contact@resumejob.net">可以发送邮件给我们</Link>.
+           <Link href="mailto:contact@osjobs.net">可以发送邮件给我们</Link>.
          </Answer>
         </section>
         <SectionDivider />
