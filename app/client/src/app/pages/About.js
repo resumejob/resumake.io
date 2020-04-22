@@ -214,7 +214,7 @@ function About() {
       <Header>
         <Logo big />
         <p>
-          ResumeJob 简历生成器方便用户生成排版整齐的 PDF 简历。
+          Overseas Rabbit 简历生成器方便用户生成排版整齐的 PDF 简历。
         </p>
         <p>
           这个应用大部分代码基于 Saad Quadri 的 MIT 协议的 Resumake 项目二次修改，
