@@ -330,7 +330,7 @@ class Home extends Component<Props> {
               </HelpButton>
             </ImportRow>
             <a id="resumejob-link" href="https://co.osjobs.net/">
-              简历评测 | 模拟面试 - 程序员求职课程
+              简历评测 | 模拟面试
             </a>
           </LeftSection>
           <RightSection>
