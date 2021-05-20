@@ -329,9 +329,10 @@ class Home extends Component<Props> {
                 <Icon size={22} type="help" />
               </HelpButton>
             </ImportRow>
-            <a id="resumejob-link" href="https://co.osjobs.net/">
-              简历评测 | 模拟面试
+            <a id="resumejob-link" href="https://osjobs.net/co/">
+              入职套餐 | 入职不成功不收费
             </a>
+            <Link to="/about">使用教程</Link>
           </LeftSection>
           <RightSection>
             <ResumePreview>
@@ -342,7 +343,7 @@ class Home extends Component<Props> {
           </RightSection>
         </Main>
         <Footer>
-          <Copyright>© 2020 Overseas Rabbit </Copyright>
+          <Copyright>© 2021 Overseas Rabbit </Copyright>
           <Links>
             <Link to="/about">About</Link>
             <a href="mailto:contact@osjobs.net">Contact</a>

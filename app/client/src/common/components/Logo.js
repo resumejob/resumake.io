@@ -32,7 +32,7 @@ function Logo({ big }: Props) {
   return (
     <Text big={big}>
       <StyledLink to="/">
-        Beta 版本
+        正式版
       </StyledLink>
     </Text>
   )
